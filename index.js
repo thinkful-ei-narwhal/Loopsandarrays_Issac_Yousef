@@ -72,3 +72,35 @@ function testFunctionWorks(fn, input, expected) {
 	}).length;
 	console.log(numPassing + ' out of ' + testResults.length + ' tests passing.');
 })();
+
+
+'use strict'
+
+function max (numbers) {
+  let i = 0
+  let max = numbers[0]
+  while (i < numbers.length) {
+    if (numbers[i] > max) {
+      max = numbers[i]
+    }
+    i++
+  }
+  return max
+}
+
+console.log(max([2, 7, 9, 10, 3, 15]))
+
+function min (numbers) {
+  let i = 0
+  let min = numbers[0]
+
+  while (i < numbers.length) {
+    if (numbers[i] < min) {
+      min = numbers[i]
+    }
+    i++
+  }
+  return min
+}
+
+console.log(min([3,20,4,7,9]))
